@@ -1,0 +1,22 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.App{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-evenly;
+  color:#eee;
+}
+.btn{
+  padding: 1rem;
+  font-size: 1rem;
+  outline: none;
+  color:#999;
+  background-color: #111;
+  border-radius: 1rem;
+}
