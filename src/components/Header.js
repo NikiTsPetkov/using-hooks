@@ -5,14 +5,13 @@ const Header = ({color,changeColor}) => {
 
     const prevColor = useRef()
     const oldColor = useRef()
-    // oldColor.current = color
-    console.log(prevColor)
 
     useEffect(() => {
         setCount(count =>count + 1);
         count<0? oldColor.current = prevColor.current==="red"?"blue":prevColor.current:oldColor.current = prevColor.current;
         prevColor.current = color;
-    },[color,changeColor])
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[color])
     return(
         <>
         <h2>Background color changes {count} times</h2>
